@@ -1,0 +1,35 @@
+.window {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    background-color: rgb(73, 69, 69);
+    height: 600px;
+    width: 200px;
+    border-radius: 2em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    box-shadow: inset -5px 5px 5px rgb(19, 19, 19);
+}
+
+.red{
+    background-color: rgb(236, 32, 32);
+}
+
+.yellow {
+    background-color: rgb(243, 190, 14);
+}
+
+.green {
+    background-color: rgb(0, 141, 0);
+}
