@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 70%;
+    grid-template-rows: 2fr 60fr 40px;
+    grid-template-areas: 'header header header header'
+                            'sidebar main main main'
+                            'footer footer footer footer';
+}
+
+h1 {
+    color: white;
+}
+
+.header {
+    text-align: center;
+    background-color: skyblue;
+    grid-area: header;
+}
+
+.parnav {
+    color: red;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    margin: 10px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    color: white;
+    text-align: right;
+    background-color: gray;
+    grid-area: footer;
+}
+
+

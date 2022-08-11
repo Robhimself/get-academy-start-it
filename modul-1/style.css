@@ -1,0 +1,54 @@
+div {
+    display: block;
+}
+
+.cards {
+    display: block;
+}
+
+.card {
+    width: 500px;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    margin: 10px;
+}
+
+.innerCard {
+    padding: 10px;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 1% 0;
+    border: 1px solid gray;
+    user-select: none;
+}
+
+.green {
+    background-color: #3cba54;
+}
+
+.blue {
+    background-color: #4885ed;
+}
+
+.red {
+    background-color: #db3236;
+}
+
+.yellow {
+    background-color: #f4c20d;
+}
+
+.black {
+    background-color: #36393f;
+}
+
+.bodies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
