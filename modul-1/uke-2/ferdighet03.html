@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="row">
+      <table>
+        <tr>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+        </tr>
+        <tr>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+          <td onmouseover="hover(this)" onmouseout="mouseGone(this)">o</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      function hover(changeThis) {
+        changeThis.innerHTML = "x";
+      }
+
+      function mouseGone(changeBack) {
+        changeBack.innerHTML = "o";
+      }
+    </script>
+  </body>
+</html>
