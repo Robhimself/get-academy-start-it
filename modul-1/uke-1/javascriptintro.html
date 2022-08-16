@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #robertstag1 {
+            background-color: blueviolet;
+        }
+
+        #robertstag2 {
+            background-color: aqua;
+        }
+
+        #robertstag3 {
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div id="robertstag1">(tom)</div>
+    <div id="robertstag2">(tom)</div>
+    <div id="robertstag3">(tom)</div>
+
+    <button onclick="show1()">Vis noe i tagg 1</button>
+    <button onclick="show2()">Vis noe i tagg 2</button>
+    <button onclick="show3()">Vis noe i tagg 3</button>
+    <button onclick="blankAll()">Blank ut</button>
+
+    <h3>Bla opp og ned</h3>
+    <div style="display:flex;" id="numberAndButtons">
+        <button onclick="showNumber1()">
+            Ned
+        </button>
+        <div>
+            <img src="img/head1.png">
+        </div>
+        <button onclick="showNumber2()">
+            Opp
+        </button>
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+    <script>
+        showNumber1();
+        function show1() { //det kommer parametere inni disse parentesene
+            blankAll();
+            document.getElementById('robertstag1').innerHTML= /*HTML*/`
+
+            Aaa show1`;
+        }
+
+        function show2() {
+            //blankAll();
+            document.getElementById('robertstag2').innerHTML= /*HTML*/`
+
+            Mighty buush of show 2
+            `;
+        }
+        
+        function show3() {
+            blankAll();
+            document.getElementById('robertstag3').innerHTML= "You silly goose";
+        }
+
+        function blankAll() {
+            document.getElementById('robertstag1').innerHTML= '.';
+            document.getElementById('robertstag2').innerHTML= '.';
+            document.getElementById('robertstag3').innerHTML= '.';
+        }
+
+        function showNumber1(){
+            document.getElementById('numberAndButtons').innerHTML = /*HTML*/`
+            <button onclick="showNumber4()">
+                ◀
+        </button>
+        <div>
+            <img src="img/head1.png">
+        </div>
+        <button onclick="showNumber2()">
+            ▶
+        </button>
+        `;
+        }
+        function showNumber2(){
+            document.getElementById('numberAndButtons').innerHTML = /*HTML*/`
+            <button onclick="showNumber1()">
+                ◀
+        </button>
+        <div>
+            <img src="img/head2.png">
+        </div>
+        <button onclick="showNumber3()">
+            ▶
+        </button>
+        `;
+        }
+        function showNumber3(){
+            document.getElementById('numberAndButtons').innerHTML = /*HTML*/`
+            <button onclick="showNumber2()">
+                ◀
+        </button>
+        <div>
+            <img src="img/head3.png">
+        </div>
+        <button onclick="showNumber4()">
+            ▶
+        </button>
+        `;
+        }
+        function showNumber4(){
+            document.getElementById('numberAndButtons').innerHTML = /*HTML*/`
+            <button onclick="showNumber3()">
+                ◀
+        </button>
+        <div>
+            <img src="img/head4.png">
+        </div>
+        <button onclick="showNumber1()">
+            ▶
+        </button>
+        `;
+        }
+
+
+    </script>
+
+
+</body>
+</html>
