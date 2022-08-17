@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkgray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-style: square;
+        font-size: xx-large;
+      }
+
+      #stopwatch {
+        display: flex;
+        height: 450px;
+        width: 450px;
+        font-size: 3em;
+        color: whitesmoke;
+        background-color: darkcyan;
+        border-color: white;
+        border-radius: 0.5em;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 450px;
+      }
+
+      .buttons {
+        display: flex;
+        flex: 1;
+        width: 450px;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 2px;
+      }
+
+      .startStopButton {
+        background-color: lightgreen;
+        height: 30px;
+        width: 160px;
+        padding: 1px;
+        margin: 1px;
+        border: 2px;
+        border-color: black;
+        border-radius: 1em;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 30px;
+      }
+      .clearButton {
+        background-color: rgb(68, 65, 65);
+        color: white;
+        height: 30px;
+        width: 160px;
+        padding: 1px;
+        margin: 1px;
+        border: 2px;
+        border-color: black;
+        border-radius: 1em;
+        align-self: center;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stopwatch">0</div>
+
+    <div class="buttons">
+      <div onclick="clearTimer()" class="clearButton">Clear</div>
+      <div id="startStopButton" onclick="startStop()" class="startStopButton">
+        Start
+      </div>
+    </div>
+
+    <script>
+      let timer = document.getElementById("stopwatch");
+      let buttonName = document.getElementById("startStopButton");
+      let seconds = 0;
+      let interval;
+
+      function startStop() {
+        if (!interval) {
+          interval = setInterval(startTime, 1000);
+          startStopButton.innerHTML = "Stop";
+        } else {
+          clearInterval(interval);
+          interval = false;
+          buttonName.innerHTML = "Start";
+        }
+      }
+      function startTime() {
+        timer.innerHTML = seconds++;
+      }
+
+      function clearTimer() {
+        timer.innerHTML = "0";
+        seconds = 0;
+      }
+    </script>
+  </body>
+</html>

@@ -5,10 +5,17 @@
     <meta charset="utf-8" />
     <title></title>
   </head>
-  <body onload="testOnLoad()">
+  <body onload="multihandler('onload')">
     <p>Ferdighet 2a - Alternative eventhandlere: onchange osv.</p>
-    <input type="text" onchange="testOnChange()" oninput="testOnInput()" />
-    <h3 onmouseover="testOnMouseOver()" onmouseout="testOnMouseOut()">
+    <input
+      type="text"
+      onchange="multihandler('dette er en onchange')"
+      oninput="multihandler('oninput')"
+    />
+    <h3
+      onmouseover="multihandler('onmouseover')"
+      onmouseout="multihandler('onmouseout')"
+    >
       Test test test
     </h3>
     <h2 id="info"></h2>
@@ -16,26 +23,41 @@
     <a href="https://www.w3schools.com/jsref/dom_obj_event.asp"
       >Mer informasjon her</a
     >
+
+    <div onclick="changeText('Larvik', 34, this)">Robert</div>
+    <div onclick="changeText('Sandefjord', 32, this)">Therese</div>
+    <div id="text"></div>
+
     <script>
-      function testOnLoad() {
-        document.getElementById("info").innerHTML += "<li>onload</li>";
+      //${}
+      function multihandler(text) {
+        document.getElementById("info").innerHTML = `<li>${text}</li>`;
       }
 
-      function testOnChange() {
-        document.getElementById("info").innerHTML += "<li>onchange</li>";
+      function changeText(bosted, alder, element) {
+        document.getElementById("text").innerHTML =
+          bosted + ", Her bor " + element.innerHTML + " alder er: " + alder;
       }
 
-      function testOnInput() {
-        document.getElementById("info").innerHTML += "<li>oninput</li>";
-      }
+      // function testOnLoad() {
+      //   document.getElementById("info").innerHTML += "<li>onload</li>";
+      // }
 
-      function testOnMouseOver() {
-        document.getElementById("info").innerHTML += "<li>onmouseover</li>";
-      }
+      // function testOnChange() {
+      //   document.getElementById("info").innerHTML += "<li>onchange</li>";
+      // }
 
-      function testOnMouseOut() {
-        document.getElementById("info").innerHTML += "<li>onmouseout</li>";
-      }
+      // function testOnInput() {
+      //   document.getElementById("info").innerHTML += "<li>oninput</li>";
+      // }
+
+      // function testOnMouseOver() {
+      //   document.getElementById("info").innerHTML += "<li>onmouseover</li>";
+      // }
+
+      // function testOnMouseOut() {
+      //   document.getElementById("info").innerHTML += "<li>onmouseout</li>";
+      // }
     </script>
   </body>
 </html>

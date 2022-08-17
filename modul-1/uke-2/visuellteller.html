@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visuell Teller</title>
+  </head>
+  <body>
+    <button onclick="addOne()">Pluss</button>
+    <button onclick="subtractOne()">Minus</button>
+
+    <div id="show"></div>
+
+    <script>
+      let randomNumber = Math.random() * 100;
+      let randomStart = Math.floor(randomNumber);
+      document.getElementById("show").innerHTML = randomStart;
+
+      function addOne() {
+        show.innerHTML++;
+      }
+      function subtractOne() {
+        show.innerHTML--;
+      }
+    </script>
+  </body>
+</html>
