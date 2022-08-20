@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mainDivs {
+        height: 200px;
+        width: 200px;
+        margin: 5px;
+        border: 3px solid black;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 200px;
+        font-size: x-large;
+      }
+
+      .revertBack {
+        border: 3px solid black;
+      }
+
+      .chosenBorder {
+        border: 3px solid gold;
+      }
+
+      #red {
+        background-color: red;
+      }
+      #green {
+        background-color: green;
+      }
+      #pink {
+        background-color: pink;
+      }
+      #chooseButton {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="red" class="mainDivs" onclick="newColor('red'); selectedDiv(this)">
+      Rød?
+    </div>
+    <div
+      id="green"
+      class="mainDivs"
+      onclick="newColor('green'); selectedDiv(this)"
+    >
+      Grønn?
+    </div>
+    <div
+      id="pink"
+      class="mainDivs"
+      onclick="newColor('pink'); selectedDiv(this)"
+    >
+      Rosa?
+    </div>
+    <div id="chooseButton" class="mainDivs" onclick="whatNow(changeBig)">
+      Velg!
+    </div>
+
+    <script>
+      let changeBig = "";
+
+      function newColor(thisColor) {
+        changeBig = thisColor;
+      }
+
+      function whatNow(changeBig) {
+        document.body.style.backgroundColor = changeBig;
+      }
+
+      function selectedDiv(clickedDiv) {
+        clickedDiv.classList.toggle("chosenBorder");
+      }
+    </script>
+  </body>
+</html>
