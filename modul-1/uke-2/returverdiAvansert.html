@@ -31,7 +31,7 @@
           delAvStylePx("width", bredde) +
           delAvStylePx("height", høyde) +
           delAvStyle("background-color", farge) +
-          '"></div>';
+          `">${tilfeldigBokstav()}</div>`;
         document.write(divHtml);
         if (Math.random() < 0.9) tilfeldigFirkant();
       }
@@ -68,15 +68,14 @@
       }
 
       function tilfeldigBokstav() {
-        var randomTall = newRandomNumber(0, 28);
-        var randomCharCode = "a".charCodeAt(0);
-        return String.fromCharCode(randomTall - 10 + randomCharCode);
-      }
-
-      function newRandomNumber(min, maks) {
-        min = Math.ceil(min);
-        maks = Math.floor(maks);
-        return newMinimum + Math.floor(Math.random() * (maks - min + 1));
+        const alleBokstaver = "abcdefghijklmnopqrstuvwxyzæøå";
+        var mittOrd = "";
+        for (let i = 0; i < 5; i++) {
+          mittOrd += alleBokstaver.charAt(
+            Math.floor(Math.random() * alleBokstaver.length)
+          );
+        }
+        return mittOrd;
       }
     </script>
   </body>
