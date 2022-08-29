@@ -56,18 +56,31 @@
     <script type="text/javascript">
       var resultBox = document.getElementById("resultBox");
 
-      function addCharacter(x) {
-        resultBox.innerHTML += x;
+      //MODEL
+      let input = "";
+
+      //VIEW
+      show();
+      function show() {
+        resultBox.innerHTML = input;
       }
 
+      //CONTROLLER
+
       function calculate() {
-        var calculation = resultBox.innerHTML
-          .replace("×", "*")
-          .replace("÷", "/");
-        resultBox.innerHTML = eval(calculation);
+        var calculation = input.replace("×", "*").replace("÷", "/");
+        input = eval(calculation);
+        show();
       }
+
+      function addCharacter(x) {
+        input += x;
+        show();
+      }
+
       function clearResult() {
-        resultBox.innerHTML = "";
+        input = "";
+        show();
       }
     </script>
   </body>
