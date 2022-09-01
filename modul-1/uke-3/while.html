@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      calculate();
+      function calculate() {
+        let outputNumbers = "";
+        let number = 1;
+        let otherNumber = 2;
+        let count = 0;
+
+        while (number !== otherNumber) {
+          number = Math.floor(Math.random() * 10 + 1);
+          otherNumber = Math.floor(Math.random() * 10 + 1);
+          outputNumbers = number + " vs " + otherNumber;
+          count++;
+          if (number !== otherNumber) {
+            document.getElementById(
+              "app"
+            ).innerHTML += `<div>${outputNumbers}</div>`;
+          } else {
+            document.getElementById(
+              "app"
+            ).innerHTML += `<div>Endelig ble det likt! ${outputNumbers}. Det tok ${count} forsøk.</div>`;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
