@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="showNumber">1</div>
+    <button onclick="doubleNumber()">Dobbelt!</button>
+    <button onclick="addOne()">Pluss 1!</button>
+    <button onclick="resetNumber()">Reset!</button>
+    <button onclick="createDivs()">Lag div'er!</button>
+
+    <script>
+      let newNumber = 1;
+      let html = document.getElementById("showNumber");
+
+      function addOne() {
+        if (newNumber < 10) {
+          newNumber++;
+        }
+        html.innerHTML = newNumber;
+      }
+      function doubleNumber() {
+        newNumber = newNumber * 2;
+        html.innerHTML = newNumber;
+      }
+      function resetNumber() {
+        newNumber = 1;
+        html.innerHTML = newNumber;
+      }
+      function createDivs() {
+        for (let i = 1; i < newNumber + 1; i++) {
+          html.innerHTML += `<div>${i}</div>`;
+        }
+      }
+    </script>
+  </body>
+</html>
