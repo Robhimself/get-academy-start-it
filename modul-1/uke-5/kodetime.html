@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="score">Poeng: 0</div>
+    <img src="krokodille.jpg" style="height: 150px; width: auto" />
+    <div id="a"></div>
+    <input type="text" id="ourInput" />
+    <div id="b"></div>
+    <button onclick="submitAnswer()">Submit</button>
+    <button onclick="resetGame()">Reset</button>
+    <script>
+      let scoreCard = document.getElementById("score");
+      let numberA = document.getElementById("a");
+      let numberB = document.getElementById("b");
+      let points = 0;
+      //   let randomA = 0;
+      //   let randomB = 0;
+
+      randomNum();
+      function randomNum() {
+        randomA = Math.floor(Math.random() * 10 + 1);
+        randomB = Math.floor(Math.random() * 10 + 1);
+        numberA.innerHTML = randomA;
+        numberB.innerHTML = randomB;
+      }
+
+      function submitAnswer() {
+        let ourGuess = document.getElementById("ourInput").value;
+        if (getCorrectAnswer() == ourGuess) {
+          points++;
+        } else {
+          points--;
+        }
+        scoreCard.innerHTML = `Poeng: ${points}`;
+      }
+
+      function getCorrectAnswer() {
+        if (randomA < randomB) {
+          return "<";
+        } else if (randomA > randomB) {
+          return ">";
+        } else {
+          return "=";
+        }
+      }
+
+      function resetGame() {}
+    </script>
+  </body>
+</html>
