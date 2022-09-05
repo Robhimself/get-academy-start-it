@@ -16,7 +16,8 @@
 // }
 
 function fixText(txt) {
-  noSpaceTxt = txt.split(" ").join("");
+  smallLetterTxt = txt.toLowerCase();
+  noSpaceTxt = smallLetterTxt.split(" ").join("");
   fixedTxt = noSpaceTxt.charAt(0).toUpperCase() + noSpaceTxt.slice(1);
   return fixedTxt;
 }

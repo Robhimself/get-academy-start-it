@@ -38,6 +38,11 @@
         const expected = "Terje";
         assert.equal(actual, expected);
       });
+      QUnit.test("fix - ' terje '", function (assert) {
+        const actual = fixText(" TERJE ");
+        const expected = "Terje";
+        assert.equal(actual, expected);
+      });
     </script>
   </body>
 </html>
