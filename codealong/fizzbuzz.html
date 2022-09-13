@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FizzBuzz-test.</h1>
+    <p>
+      Returner ordet 'fizz' hver gang tallet er delelig med 3.<br />
+      Returner ordet 'buzz' hver gang tallet er delelig med 5.<br />
+      Og returner ordet 'fizzbuzz' når det er delelig med 3 og 5.
+    </p>
+    <br />
+    <button onclick="fizzbuzz()">Go!</button>
+    <br />
+    <div id="fizzArea"></div>
+
+    <script>
+      let myFizzBuzz = "";
+      let creationDiv = document.getElementById("fizzArea");
+
+      function fizzbuzz() {
+        for (let i = 1; i < 101; i++) {
+          if (i % 15 == 0) {
+            creationDiv.innerHTML += `<div>FizzBuzz!</div>`;
+          } else if (i % 3 == 0) {
+            creationDiv.innerHTML += `<div>Fizz!</div>`;
+          } else if (i % 5 == 0) {
+            creationDiv.innerHTML += `<div>Buzz!</div>`;
+          } else {
+            creationDiv.innerHTML += `<div>${i}</div>`;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

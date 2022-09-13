@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>La oss snu ordet ditt:</h1>
+    <input type="text" oninput="flipword = this.value" /><button
+      onclick="flipped()"
+    >
+      Flip
+    </button>
+    <div id="flipDiv"></div>
+    <br />
+    <h1>La oss endre casingen til ordet ditt:</h1>
+    <input type="text" oninput="casingword = this.value" /><button
+      onclick="altCasing()"
+    >
+      Alternate
+    </button>
+    <div id="casingDiv"></div>
+    <br />
+    <br />
+    <h1>La oss telle antall bestemte bokstaver i ordet ditt:</h1>
+
+    <input
+      type="text"
+      placeholder="Hvilken bokstav vil du telle?"
+      oninput="countingCheck = this.value"
+    />
+    <input
+      type="text"
+      placeholder="Ditt ord"
+      oninput="countingWord = this.value"
+    />
+    <button onclick="countingLetters()">Sjekk</button>
+    <div id="countingDiv"></div>
+
+    <script>
+      let flipword = "";
+      let casingword = "";
+      let countingCheck = "";
+      let countingWord = "";
+      let ourCount = 0;
+      let showFlip = document.getElementById("flipDiv");
+      let showCasing = document.getElementById("casingDiv");
+      let showCount = document.getElementById("countingDiv");
+
+      function flipped() {
+        showFlip.innerHTML = flipword.split("").reverse().join("");
+      }
+
+      function altCasing() {
+        let letters = casingword.toLowerCase().split(""); // husk .toLowerCase() før .split()
+        for (let i = 0; i < letters.length; i++) {
+          if (i % 2 == 0) {
+            letters[i] = letters[i].toUpperCase();
+          }
+          showCasing.innerHTML = letters.join("");
+        }
+      }
+
+      function countingLetters() {
+        ourCount = 0;
+        countingWord = countingWord.toLowerCase();
+        countingCheck = countingCheck.toLowerCase();
+        for (let i = 0; i < countingWord.length; i++) {
+          if (countingWord.charAt(i) == countingCheck) {
+            //charAt starter på 0, som et array.
+            ourCount++;
+          }
+        }
+        showCount.innerHTML = ourCount;
+      }
+    </script>
+  </body>
+</html>
