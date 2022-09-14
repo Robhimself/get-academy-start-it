@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addingNumbers(1, 'blue')">pluss 1</button>
+    <button onclick="addingNumbers(2, 'red')">pluss 2</button>
+    <button onclick="addingNumbers(4, 'yellow')">pluss 4</button>
+    <button onclick="addingNumbers(6, 'pink')">pluss 6</button>
+    <div id="ourNum"></div>
+
+    <script>
+      let ourDiv = document.getElementById("ourNum");
+      let showNum = 0;
+
+      function addingNumbers(number, color) {
+        showNum = showNum + number;
+        ourDiv.innerHTML = `<div ${newColor(color)}>${showNum}</div>`;
+      }
+
+      function newColor(color) {
+        return `style="background-color: ${color}";`;
+      }
+    </script>
+  </body>
+</html>
