@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tre på rad</title>
+    <style type="text/css">
+      div {
+        color: green;
+        background-color: lightgray;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 2px;
+        font-size: 500%;
+        font-family: helvetica;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      div.first {
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    1. Grunnleggende HTML
+    2. Kjøre Javascript-kommandoer ved klikk på noe på websiden
+    3. Hente ut element i Javascript - "this" eller via id
+    4. Endre HTML til et element vha. Javascript.
+    -->
+    <div onclick="setX(this)" class="first"></div>
+    <div onclick="setX(this)"></div>
+    <div onclick="setX(this)"></div>
+
+    <div onclick="setX(this)" class="first"></div>
+    <div onclick="setX(this)"></div>
+    <div onclick="setX(this)"></div>
+
+    <div onclick="setX(this)" class="first"></div>
+    <div onclick="setX(this)"></div>
+    <div onclick="setX(this)"></div>
+
+    <script type="text/javascript">
+      function setX(divElement) {
+        if (divElement.innerHTML !== "x" && divElement.innerHTML !== "o") {
+          divElement.innerHTML = "x";
+
+          var divs1 = document.getElementsByTagName("div");
+          var divs2 = new Array();
+          for (var i = 0; i < divs1.length; i++) {
+            if (divs1[i].innerHTML !== "x" && divs1[i].innerHTML !== "o") {
+              divs2.push(divs1[i]);
+            }
+          }
+
+          if (divs2.length > 0) {
+            var index = Math.floor(Math.random() * divs2.length);
+            divs2[index].innerHTML = "o";
+            divs2[index].style.color = "blue";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
