@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #app {
+        display: grid;
+        grid-template-columns: repeat(5, 150px);
+        grid-template-rows: repeat(5, 150px);
+      }
+      .lamp {
+        margin: 10px;
+        background-color: grey;
+        border-radius: 50%;
+      }
+
+      .lightOn {
+        margin: 10px;
+        background-color: yellow;
+        border-radius: 50%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      let html = document.getElementById("app");
+      let reactionTime = [];
+      let startTime = 0;
+      let finishTime;
+      let leaderBoard = [];
+
+      createBoard();
+      function updateView() {
+        html.innerHTML += "";
+      }
+
+      function startGame() {
+        html.innerHTML = "";
+        createBoard();
+      }
+
+      function createBoard() {
+        var randomDiv = Math.floor(Math.random() * 25);
+        for (let i = 0; i < 25; i++) {
+          if (randomDiv == i) {
+            html.innerHTML += `<div class="lightOn" onclick="newReaction()"></div>`;
+          } else {
+            html.innerHTML += `<div class="lamp"></div>`;
+          }
+        }
+        updateView();
+      }
+
+      function newReaction() {
+        if (startTime == 0) {
+          startTime = new Date().getTime();
+        } else {
+          finishTime = new Date().getTime();
+          let reaction = Math.floor(finishTime - startTime);
+          reactionTime.push(reaction);
+          startTime = new Date().getTime();
+          finishTime = 0;
+        }
+        if (reactionTime.length >= 10) {
+          drawResult();
+          startTime = 0;
+          finishTime = 0;
+        } else {
+          html.innerHTML = "";
+          createBoard();
+        }
+      }
+
+      function drawResult() {
+        let bestTime = 0;
+        let sum = reactionTime.reduce(function (a, b) {
+          return a + b;
+        }, 0);
+        let totalTime = sum / 1000;
+        leaderBoard.push(totalTime);
+        if (leaderBoard.length == 0) {
+          bestTime.push(totalTime);
+        } else {
+          bestTime = leaderBoard.sort(function (a, b) {
+            return a - b;
+          });
+        }
+        html.innerHTML += `<div>
+                                <div>Du brukte totalt: ${totalTime} sekunder på 10 riktige trykk!</div>
+                                <div>Din beste tid er: ${bestTime[0]}</div></div>`;
+
+        reactionTime = [];
+        updateView();
+      }
+    </script>
+  </body>
+</html>
