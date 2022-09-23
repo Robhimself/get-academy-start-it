@@ -59,7 +59,7 @@
       }
 
       function createBoard() {
-        var randomDiv = Math.floor(Math.random() * 25);
+        let randomDiv = Math.floor(Math.random() * 25);
         for (let i = 0; i < 25; i++) {
           if (randomDiv == i) {
             html.innerHTML += `<div class="lightOn" onclick="newReaction()"></div>`;
@@ -106,11 +106,20 @@
         }
         html.innerHTML += `<div>
                                 <div>Du brukte totalt: ${totalTime} sekunder på 10 riktige trykk!</div>
-                                <div>Din beste tid er: ${bestTime[0]}</div></div>`;
+                                <div>Din beste tid er: ${bestTime[0]}</div>
 
+                                
+                            </div>`;
+        //showLeaderboard();
         reactionTime = [];
         updateView();
       }
+
+      // function showLeaderboard() {
+      //   for (let i = 0; i < leaderBoard.length; i++) {
+      //     html.innerHTML += `<div>${leaderBoard[i]}</div><br>`;
+      //   }
+      // }
     </script>
   </body>
 </html>
