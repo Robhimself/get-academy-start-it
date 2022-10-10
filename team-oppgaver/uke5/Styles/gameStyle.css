@@ -1,0 +1,100 @@
+.game-mainContainer {
+  background-color: #15133c;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-gameContainer {
+  background-color: #15133c;
+  height: 60vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-infoContainer {
+  background-color: #0192c0;
+  color: #ffffff;
+  height: 5%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.5em;
+  border: 3px solid #5fc5ba;
+}
+
+.game-playerContainer {
+  background-color: #0192c0;
+  color: #ffffff;
+  height: 20vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.5em;
+  margin-right: 4em;
+  border: 3px solid #5fc5ba;
+}
+
+.game-arenaContainer {
+  background-color: #0192c0;
+  color: #ffffff;
+  height: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.5em;
+  border: 3px solid #5fc5ba;
+}
+
+.game-playerCard {
+  font-size: 4rem;
+}
+.game-computerCard {
+  font-size: 4rem;
+}
+
+.game-computerContainer {
+  background-color: #0192c0;
+  color: #ffffff;
+  height: 20vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.5em;
+  border: 3px solid #5fc5ba;
+  margin-left: 4em;
+}
+
+.game-selectedHand {
+  background-color: #0192c0;
+  border: 3px solid #5fc5ba;
+
+  width: 50%;
+  height: 10vh;
+  /* min-height: 100px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
+  border-radius: 0.5em;
+}
+.game-hand {
+  font-size: clamp(1rem, 5vw, 4rem);
+  text-align: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+}
