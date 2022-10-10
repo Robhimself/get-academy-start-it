@@ -1,0 +1,64 @@
+.oscar-container {
+  height: 650px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 10px;
+  justify-content: bottom;
+  background-color: rgb(95, 131, 160);
+}
+
+.chatInput {
+  margin: 0px 10px 10px 10px;
+  padding: 5px;
+  border: 1px solid gray;
+  text-align: left;
+  border-radius: 10px;
+  width: min(50%, calc(80% + 100px));
+  align-self: center;
+}
+
+.oscar-chatWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.userChatBoubble {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0px;
+  width: auto;
+  align-self: flex-end;
+  align-items: center;
+  font-size: medium;
+  background-color: rgb(255, 243, 136);
+  border-radius: 10px;
+  border: 1px solid black;
+  height: auto;
+  min-height: 5%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.botChatBoubble {
+  display: flex;
+  justify-content: start;
+  font-size: medium;
+  width: auto;
+  align-self: flex-start;
+  color: white;
+  align-items: center;
+  background-color: rgb(100, 149, 255);
+  border-radius: 10px;
+  border: 1px solid black;
+  height: auto;
+  min-height: 5%;
+  margin: 5px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(0.25turn, #a1b6c3, white, #a1b6c3);
+}
+
+#header {
+  height: 100px;
+  width: auto;
+}
+
+#chatBox {
+  height: auto;
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#andyChat {
+  min-height: 600px;
+  width: 33%;
+  border: 2px solid black;
+  margin: 10px;
+  background-color: rgb(202, 220, 80);
+}
+
+#oscarChat {
+  min-height: 600px;
+  width: 33%;
+  border: 2px solid black;
+  margin: 10px;
+  background-color: rgb(95, 131, 160);
+}
+
+#robertChat {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  width: 33%;
+  border: 2px solid black;
+  margin: 10px;
+  align-items: center;
+  background: linear-gradient(0.25turn, #6a2c70, #8d3a95, #6a2c70);
+}
+
+.userReplies {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  align-self: flex-end;
+  align-items: center;
+  background: linear-gradient(0.25turn, #f04bff, #8d3a95, #ef3bff);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+.robotReplies {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  align-self: flex-start;
+  align-items: center;
+  background: linear-gradient(0.25turn, #9a38a3, #8d3a95, #9a38a3);
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.robertChatInput {
+  display: flex;
+  background: linear-gradient(0.25turn, #cbb26a, white, #cbb26a);
+  min-width: 100%;
+  height: 20px;
+  border-radius: 5px;
+}

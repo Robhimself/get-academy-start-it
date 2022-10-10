@@ -1,0 +1,55 @@
+.cryptoBot {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  margin: 10px;
+  background-color: rgb(34, 219, 173);
+  border-radius: 15%;
+}
+
+.container {
+  height: 500px;
+
+  display: flex;
+  flex: column-reverse;
+  border: solid white;
+  margin: 10px;
+  align-items: center;
+}
+
+.minBox {
+  border-radius: 15px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(0, 255, 136);
+  border: thin black;
+}
+
+.botBox {
+  border-radius: 15px;
+  height: auto;
+  margin: 10px;
+  padding: 5x;
+  background-color: rgb(31, 221, 234);
+  border: thin black;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column-reverse;
+
+  border-radius: 12px;
+  max-width: 50%;
+  padding: 5px;
+  align-self: center;
+}
+
+.errorBox {
+  height: auto;
+  margin: 10px;
+  padding: 5x;
+  background-color: rgb(234, 31, 65);
+  border: thick black;
+}
