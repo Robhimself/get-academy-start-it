@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamOppgave Uke 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      
+      <div id="logoItem">
+        <a href="https://github.com/Robhimself/teamoppgaver/tree/main/uke-3" target="_blank"><img src="t4w.PNG"/></a>
+        <div id="headerText">
+        <h1>Team 4 - <a href="https://paintshop.io/" target="_blank">Paintshop.io</a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="bodyContainer">
+      <div id="mainContainer">
+        <div id="inputContainer">
+          <div id="inputText">Legg til maling, i hvilken farge og størrelse du ønsker:</div>
+          <div class="container">
+            <a data-modal="modal-one">Legg til</a>
+          </div>
+          
+          <div class="modal" id="modal-one">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+              <div id="modalheader"><h1 class="modal-header">Malingslista</h1><button class="modal-close modal-exit"> X </button></div>
+              <br>
+                <div><label for="paintInput">Farge: </label><input id="colorInput" type="text" placeholder="Write a color" size="7"/>
+                <label for="paint">Velg mengde: </label>
+                <!--Dropdown for mengde maling-->
+                <select id="paintSelect" name="paint">
+                  <option value="1">1L</option>
+                  <option value="5">5L</option>
+                  <option value="10">10L</option>
+                  <option value="20">20L</option>
+                </select>
+                </div>
+                <input
+                  class="addButton"
+                  type="submit"
+                  value="Legg til"
+                  onclick="handleColorChange()"
+                />
+            </div>
+          </div>
+          <!-- <div id="inputBox">
+            <input id="colorInput" type="text" />
+            <label for="paint">Velg mengde:</label>
+            <select id="paintSelect" name="paint">
+              <option value="1">1L</option>
+              <option value="5">5L</option>
+              <option value="10">10L</option>
+              <option value="20">20L</option>
+            </select>
+            <input
+              type="submit"
+              value="Legg til"
+              onclick="handleColorChange()"
+            />
+          </div> -->
+          
+        </div>
+        <div?? id="listContainer">
+          <div id="listText">
+            Handlekurv:
+          </div>
+          <div class="container">
+            <a data-modal="modal-two">Fjern alt</a>
+          </div>
+          
+          <div class="modal" id="modal-two">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+              <div id="modalheader"><h1 class="modal-header">Nullstill</h1><button class="modal-close modal-exit"> X </button></div>
+              <br>
+              <p>Er du sikker på at du vil fjerne alt i handlekurven?</p>
+              <br>
+              <div class="delete-modal">
+                <input
+                class="addButton modal-exit"
+                type="submit"
+                value="Ja"
+                onclick="removeEveryListItem()"
+                />   
+                <input
+                class="addButton modal-exit"
+                type="submit"
+                value="Nei"
+                />
+            </div>
+            </div>
+          </div>
+          <div id="listingArea"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
