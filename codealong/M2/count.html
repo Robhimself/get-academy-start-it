@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const counts = [
+        { value: 20, count: 10 },
+        { value: 20, count: 10 },
+        { value: 5, count: 20 },
+        { value: 1, count: 50 },
+      ];
+
+      function sum() {
+        let n = 0;
+
+        for (let i = 0; i < counts.length; i++) {
+          let value = counts[i].value;
+          let count = counts[i].count;
+          n += value * count;
+        }
+        return n;
+      }
+      console.log(sum());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const model = {
+        currentRoom: "D",
+        rooms: [
+          { name: "A", doors: ["B", "D"] },
+          { name: "B", doors: ["C", "E", "A"] },
+          { name: "C", doors: ["B"] },
+          { name: "D", doors: ["A"] },
+          { name: "E", doors: ["B", "F"] },
+          { name: "F", doors: ["E"] },
+        ],
+      };
+
+      function go(newRoom) {
+        let foundRoom = findRoom(model.currentRoom);
+        if (foundRoom != null && foundRoom.doors.includes(newRoom)) {
+          model.currentRoom = newRoom;
+        }
+      }
+
+      function findRoom(roomName) {
+        let rooms = model.rooms;
+        for (let i = 0; i < rooms.length; i++) {
+          let room = rooms[i];
+          if (model.currentRoom == room.name) {
+            return room;
+          }
+        }
+        return null;
+      }
+
+      /*
+      go('C') // Virker ikke - currentRoom skal forstatt være 'A'
+      go('B') //  currentRoom byttes til 'B'
+      go('D') //  currentRoom byttes til 'D'
+      go('E') // Virker ikke - currentRoom skal forstatt være 'A'
+      go('F') // Virker ikke - currentRoom skal forstatt være 'A'
+      */
+    </script>
+  </body>
+</html>
