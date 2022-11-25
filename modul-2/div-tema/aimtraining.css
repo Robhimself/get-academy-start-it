@@ -8,6 +8,7 @@ body {
   align-items: center;
   background-color: #8ec3ec;
   user-select: none;
+  font-family: monospace;
 }
 
 header {
@@ -41,6 +42,7 @@ header {
   justify-content: space-between;
 }
 .lb-text {
+  font-weight: bolder;
 }
 
 .game {
@@ -48,6 +50,7 @@ header {
   grid-template-columns: repeat(5, 150px);
   grid-template-rows: repeat(5, 150px);
   background-color: #8ec3ec;
+  font-weight: bolder;
 }
 
 .info {
@@ -58,18 +61,33 @@ header {
   padding: 1em;
 }
 .info-text {
-  border: 2px solid black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .results {
-  border: 2px solid red;
+  height: 25px;
+  font-weight: bolder;
 }
 
 .historic {
-  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  padding: 0.5rem;
+}
+.userScore {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.15em;
 }
 
 .lamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   border-radius: 50%;
   background: #8ec3ec;
@@ -81,6 +99,9 @@ header {
   box-shadow: inset 6px 6px 12px #79a6c9, inset -6px -6px 12px #a3e0ff;
 }
 .lightOn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   border-radius: 50%;
   background: linear-gradient(145deg, #98ff5e, #80db4f);
