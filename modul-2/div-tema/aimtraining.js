@@ -124,6 +124,8 @@ function userScores() {
   const scores = game.data.scores;
   const list = [...scores].filter((score) => score.id === game.app.user);
   console.log(list);
+  const userScore = list.map((user) => user.date).sort((a, b) => a.date - b.date);
+  console.log(userScore);
 }
 
 // Controller
@@ -148,7 +150,6 @@ function hit() {
   } else {
     game.input.finishTime = new Date().getTime();
     let reaction = Math.floor(game.input.finishTime - game.input.startTime);
-    console.log("f ", game.input.finishTime, ", s ", game.input.startTime, ", r ", reaction);
     reactionTime.push(reaction);
     game.input.startTime = new Date().getTime();
     game.input.finishTime = 0;
@@ -167,6 +168,10 @@ function drawResult() {
   let scores = game.data.scores;
   let userId = game.app.user;
   let showScore = "";
+
+  if (reactionTime.length == 0) {
+    return "";
+  }
 
   let sum = reactionTime.reduce(function (a, b) {
     return a + b;
@@ -188,12 +193,10 @@ function drawResult() {
   showScore += /*HTML*/ `
     <div>
         <div>
-            Du brukte totalt: ${totalTime} sekunder på 10 riktige trykk!
-        </div>
-        <div>
             Din beste tid er: ${bestTime[0].time}
         </div>
     </div>`;
   game.input.reactionTime = [];
+  console.log(bestTime);
   return showScore;
 }
