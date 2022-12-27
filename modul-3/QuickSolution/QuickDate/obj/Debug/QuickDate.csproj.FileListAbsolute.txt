@@ -1,0 +1,8 @@
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\bin\Debug\QuickDate.exe.config
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\bin\Debug\QuickDate.exe
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\bin\Debug\QuickDate.pdb
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\obj\Debug\QuickDate.csproj.AssemblyReference.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\obj\Debug\QuickDate.csproj.SuggestedBindingRedirects.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\obj\Debug\QuickDate.csproj.CoreCompileInputs.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\obj\Debug\QuickDate.exe
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\QuickSolution\QuickDate\obj\Debug\QuickDate.pdb

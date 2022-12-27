@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickDate", "QuickDate\QuickDate.csproj", "{467F97FC-80E7-41BF-8ADB-8878D848358F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickTest", "QuickTest\QuickTest.csproj", "{219D122F-7FCE-4859-9645-9BC754D14A85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{467F97FC-80E7-41BF-8ADB-8878D848358F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467F97FC-80E7-41BF-8ADB-8878D848358F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467F97FC-80E7-41BF-8ADB-8878D848358F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467F97FC-80E7-41BF-8ADB-8878D848358F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219D122F-7FCE-4859-9645-9BC754D14A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219D122F-7FCE-4859-9645-9BC754D14A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219D122F-7FCE-4859-9645-9BC754D14A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219D122F-7FCE-4859-9645-9BC754D14A85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29D4F0F4-0930-45A6-B329-37DBC13EFFFC}
+	EndGlobalSection
+EndGlobal
