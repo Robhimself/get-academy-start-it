@@ -1,0 +1,15 @@
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\bin\Debug\net6.0\Debugging.exe
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\bin\Debug\net6.0\Debugging.deps.json
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\bin\Debug\net6.0\Debugging.runtimeconfig.json
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\bin\Debug\net6.0\Debugging.dll
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\bin\Debug\net6.0\Debugging.pdb
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.csproj.AssemblyReference.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.AssemblyInfoInputs.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.AssemblyInfo.cs
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.dll
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\refint\Debugging.dll
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.pdb
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\Debugging.genruntimeconfig.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Debugging\obj\Debug\net6.0\ref\Debugging.dll

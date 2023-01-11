@@ -1,0 +1,15 @@
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\bin\Debug\net6.0\Hvagjoerkoden.exe
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\bin\Debug\net6.0\Hvagjoerkoden.deps.json
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\bin\Debug\net6.0\Hvagjoerkoden.runtimeconfig.json
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\bin\Debug\net6.0\Hvagjoerkoden.dll
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\bin\Debug\net6.0\Hvagjoerkoden.pdb
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.csproj.AssemblyReference.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.AssemblyInfoInputs.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.AssemblyInfo.cs
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.csproj.CoreCompileInputs.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.dll
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\refint\Hvagjoerkoden.dll
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.pdb
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\Hvagjoerkoden.genruntimeconfig.cache
+C:\Users\rober\OneDrive\Dokumenter\Get Academy\get-academy-start-it\modul-3\Hvagjoerkoden\obj\Debug\net6.0\ref\Hvagjoerkoden.dll
